@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - Exercício Complementar </title>
+</head>
+
+<body>
+    <script>
+        let nome = prompt('Qual é o seu nome?');
+        let anoNascimento = prompt('Digite o ano do seu nascimento | Ex: 1989');
+        const anoAtual = 2023;
+
+        //Validação básica do tamanho da String
+        if (anoNascimento.length !== 4) {
+            alert('Por favor, digite no formato | Ex: 1989');
+            anoNascimento = prompt('Digite o ano do seu nascimento:');
+        }
+
+        let idade = anoAtual - parseInt(anoNascimento);
+
+        alert(`Olá, ${nome}! Sua idade é: ${idade} anos!`);
+    </script>
+</body>
+
+</html>
